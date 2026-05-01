@@ -10,4 +10,6 @@ class SimpleCalculator:
     def addition(self):
         return self.first_input + self.second_input
 
+    def subtraction(self):
+        return self.first_input - self.second_input
 
