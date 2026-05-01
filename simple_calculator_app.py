@@ -21,4 +21,10 @@ class SimpleCalculator:
 
 try:
     while True:
-        calculator
+        calculator = SimpleCalculator()
+        print('''Choose a math operation:
+        1. Addition
+        2. Subtraction
+        3. Multiplication
+        4. Division''')
+except:
