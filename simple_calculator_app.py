@@ -3,6 +3,7 @@ class SimpleCalculator:
         self.first_input = None
         self.second_input = None
         self.operation = None
+        self.repeat = True
 
     def get_input(self):
         self.first_input = int(input("Enter your first number: "))
@@ -39,12 +40,12 @@ class SimpleCalculator:
         else:
             print("Invalid operation")
 
-
-
+calculator = SimpleCalculator()
 while True:
     try:
-        calculator = SimpleCalculator()
+        calculator.get_input()
+        calculator.choose_operation_handler()
 
+    except (ValueError, ZeroDivisionError):
+        print("Invalid operation or input!")
 
-
-    except ValueError, ZeroDivisionError:
