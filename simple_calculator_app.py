@@ -40,6 +40,14 @@ class SimpleCalculator:
         else:
             print("Invalid operation")
 
+    def try_again(self):
+        self.user_response = input("Would you like to try again? (y/n): ")
+
+        if self.user_response.lower() == 'y':
+            pass
+        else:
+            print("Goodbye!")
+
 calculator = SimpleCalculator()
 while True:
     try:
