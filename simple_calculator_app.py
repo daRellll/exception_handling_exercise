@@ -15,3 +15,6 @@ class SimpleCalculator:
 
     def multiplication(self):
         return self.first_input * self.second_input
+
+    def division(self):
+        return self.first_input / self.second_input
