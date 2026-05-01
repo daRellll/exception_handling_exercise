@@ -1,7 +1,7 @@
 class SimpleCalculator:
-    def __init__(self, first_input, second_input):
-        self.first_input = first_input
-        self.second_input = second_input
+    def __init__(self):
+        self.first_input = None
+        self.second_input = None
 
     def get_input(self):
         self.first_input = int(input("Enter your first number: "))
@@ -18,3 +18,7 @@ class SimpleCalculator:
 
     def division(self):
         return self.first_input / self.second_input
+
+try:
+    while True:
+        calculator
