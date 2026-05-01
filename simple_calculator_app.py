@@ -4,7 +4,7 @@ class SimpleCalculator:
         self.second_input = second_input
 
     def get_input(self):
-        self.first_input = input("Enter your first number: ")
-        self.second_input = input("Enter your second number: ")
+        self.first_input = int(input("Enter your first number: "))
+        self.second_input = int(input("Enter your second number: "))
 
 
