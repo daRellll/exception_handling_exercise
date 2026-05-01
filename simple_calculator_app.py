@@ -2,6 +2,7 @@ class SimpleCalculator:
     def __init__(self):
         self.first_input = None
         self.second_input = None
+        self.operation = None
 
     def get_input(self):
         self.first_input = int(input("Enter your first number: "))
@@ -19,12 +20,22 @@ class SimpleCalculator:
     def division(self):
         return self.first_input / self.second_input
 
-try:
-    while True:
-        calculator = SimpleCalculator()
+    def choose_operation_handler(self):
         print('''Choose a math operation:
         1. Addition
         2. Subtraction
         3. Multiplication
         4. Division''')
-except:
+        self.operation = input("Selected operation: ")
+
+        if self.operation == '1':
+
+
+
+while True:
+    try:
+        calculator = SimpleCalculator()
+
+
+
+    except ValueError, ZeroDivisionError:
