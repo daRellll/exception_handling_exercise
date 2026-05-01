@@ -59,3 +59,6 @@ class SimpleCalculator:
             except (ValueError, ZeroDivisionError):
                 print("Invalid operation or input!")
                 self.try_again()
+
+calculator = SimpleCalculator()
+calculator.calculator_run()
