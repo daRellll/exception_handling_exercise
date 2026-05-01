@@ -1,10 +1,10 @@
-repeat = True
-
 class SimpleCalculator:
     def __init__(self):
         self.first_input = None
         self.second_input = None
         self.operation = None
+        self.repeat = True
+        self.user_response = None
 
     def get_input(self):
         self.first_input = int(input("Enter your first number: "))
@@ -48,16 +48,14 @@ class SimpleCalculator:
             pass
         else:
             print("Thank you!")
-            repeat = False
+            self.repeat = False
 
-calculator = SimpleCalculator()
-while True:
-    try:
-        calculator.get_input()
-        calculator.choose_operation_handler()
-        calculator.try_again()
-
-    except (ValueError, ZeroDivisionError):
-        print("Invalid operation or input!")
-        calculator.try_again()
-
+    def calculator_run(self):
+        while self.repeat:
+            try:
+                self.get_input()
+                self.choose_operation_handler()
+                self.try_again()
+            except (ValueError, ZeroDivisionError):
+                print("Invalid operation or input!")
+                self.try_again()
