@@ -29,6 +29,15 @@ class SimpleCalculator:
         self.operation = input("Selected operation: ")
 
         if self.operation == '1':
+            print(f"sum = {self.addition()}")
+        elif self.operation == '2':
+            print(f"sub = {self.subtraction()}")
+        elif self.operation == '3':
+            print(f"mult = {self.multiplication()}")
+        elif self.operation == '4':
+            print(f"div = {self.division()}")
+        else:
+            print("Invalid operation")
 
 
 
